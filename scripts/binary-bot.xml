@@ -5,7 +5,7 @@
         <field name="VAR">Version</field>
         <value name="VALUE">
           <block type="text" id="5vVk8!]pM3O/F1gh-#-M">
-            <field name="TEXT">v1.0.6</field>
+            <field name="TEXT">v1.0.7</field>
           </block>
         </value>
         <next>
@@ -71,7 +71,7 @@
       <block type="variables_set" id="u(G$XMh^BAHBNwyLIRut">
         <field name="VAR">RSI</field>
         <value name="VALUE">
-          <block type="rsia" id="Mma11XQ=)6iYgo+%v*r_">
+          <block type="rsi" id="I*,R?b3yGU8;W*Y][SKt">
             <value name="INPUT">
               <block type="ohlc_values" id="Q3=$efe+L5Cxt[4P)MF_">
                 <field name="OHLCFIELD_LIST">close</field>
@@ -85,33 +85,78 @@
           </block>
         </value>
         <next>
-          <block type="controls_if" id="$I[fRXTWw6ri@@%=q6AL">
-            <value name="IF0">
-              <block type="logic_compare" id="qws[^`z;x%x@/5ZS*U),">
-                <field name="OP">GTE</field>
-                <value name="A">
-                  <block type="variables_get" id="YJXPElhVBp/$$}`R4%;P">
-                    <field name="VAR">RSI</field>
+          <block type="notify" id="/Zs:.|b#e@l2oCHv7KLn">
+            <field name="NOTIFICATION_TYPE">success</field>
+            <value name="MESSAGE">
+              <block type="text_join" id="gHx(;LhRqgYDyO4m2#S,">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id=":2kEo]t_QOR{k4-uvGL/">
+                    <field name="TEXT">RSI: </field>
                   </block>
                 </value>
-                <value name="B">
-                  <block type="math_number" id="7JKLwzTZ=o*WHm7CPBl8">
-                    <field name="NUM">80</field>
+                <value name="ADD1">
+                  <block type="variables_get" id="FreitFS|Cngzn0-ySp#q">
+                    <field name="VAR">RSI</field>
                   </block>
                 </value>
               </block>
             </value>
-            <statement name="DO0">
-              <block type="purchase" id="Q;`vp48|v7pG%t@W6`uQ">
-                <field name="PURCHASE_LIST">CALL</field>
+            <next>
+              <block type="controls_if" id="x!vBIHg_1h*/fjSU:x0l">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="^|2r[U}BM%h}45Dy8EPP">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="variables_get" id="-tXRf,.LpBbH0Oi{p-[*">
+                        <field name="VAR">LossTimes</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="Opb71$tDyGP2k?2k!;#G">
+                        <field name="NUM">5</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="purchase" id="FR^/$u9LmZo18w;E.Ula">
+                    <field name="PURCHASE_LIST">CALL</field>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="controls_if" id="$I[fRXTWw6ri@@%=q6AL">
+                    <value name="IF0">
+                      <block type="logic_compare" id="qws[^`z;x%x@/5ZS*U),">
+                        <field name="OP">LTE</field>
+                        <value name="A">
+                          <block type="variables_get" id="YJXPElhVBp/$$}`R4%;P">
+                            <field name="VAR">RSI</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="7JKLwzTZ=o*WHm7CPBl8">
+                            <field name="NUM">20</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="purchase" id="Q;`vp48|v7pG%t@W6`uQ">
+                        <field name="PURCHASE_LIST">CALL</field>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
               </block>
-            </statement>
+            </next>
           </block>
         </next>
       </block>
     </statement>
   </block>
-  <block type="during_purchase" id="@G%][.+GU_K^7%1dgfoR" x="0" y="595">
+  <block type="during_purchase" id="@G%][.+GU_K^7%1dgfoR" x="0" y="702">
     <statement name="DURING_PURCHASE_STACK">
       <block type="controls_if" id="js6S3S_Tc4:~-f+7Dj,j">
         <value name="IF0">
@@ -120,7 +165,7 @@
       </block>
     </statement>
   </block>
-  <block type="after_purchase" id="Vt,CkLeK8E?%BmnB`~M)" x="0" y="720">
+  <block type="after_purchase" id="Vt,CkLeK8E?%BmnB`~M)" x="0" y="827">
     <statement name="AFTERPURCHASE_STACK">
       <block type="notify" id="6Ec#VS[QEd2Yr:*FN=id">
         <field name="NOTIFICATION_TYPE">warn</field>
@@ -159,7 +204,17 @@
               <block type="notify" id="K1p68vBMeDS,4udxQ1y:">
                 <field name="NOTIFICATION_TYPE">success</field>
                 <value name="MESSAGE">
-                  <block type="total_profit" id="-ZK9}}|x~e;_b2=4cJYV"></block>
+                  <block type="text_join" id="2cY1xg2NX#JQbt)R=2G1">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="xqG@S]}NXKll_VX=I]Vq">
+                        <field name="TEXT">Total: </field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="total_profit" id="-ZK9}}|x~e;_b2=4cJYV"></block>
+                    </value>
+                  </block>
                 </value>
               </block>
             </statement>
@@ -167,7 +222,17 @@
               <block type="notify" id=";gk[Q=*pR$Q^~s/;5?e$">
                 <field name="NOTIFICATION_TYPE">error</field>
                 <value name="MESSAGE">
-                  <block type="total_profit" id="ZJ#N+N|1[BPsEzMlWjLQ"></block>
+                  <block type="text_join" id="bz;Ew@@Zhdo,Y!8K4J^M">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="D7XC=`c^t0X*On]d]+lS">
+                        <field name="TEXT">Total: </field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="total_profit" id="e9|!ae@j1N.|5^=P~*C("></block>
+                    </value>
+                  </block>
                 </value>
               </block>
             </statement>
@@ -389,7 +454,7 @@
       </block>
     </statement>
   </block>
-  <block type="math_arithmetic" id="CMI%Z,[mpBt^%ihe,TF0" disabled="true" x="0" y="1446">
+  <block type="math_arithmetic" id="CMI%Z,[mpBt^%ihe,TF0" disabled="true" x="0" y="1553">
     <field name="OP">MULTIPLY</field>
     <value name="A">
       <shadow type="math_number" id="iG=1-20#sM+Jc!u8BThl">
@@ -408,7 +473,7 @@
       </block>
     </value>
   </block>
-  <block type="procedures_defreturn" id="?!Q+zbePgL!_VF[]l^gj" x="0" y="1508">
+  <block type="procedures_defreturn" id="?!Q+zbePgL!_VF[]l^gj" x="0" y="1615">
     <field name="NAME">DelayDuration</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
     <statement name="STACK">
