@@ -78,8 +78,8 @@
               </block>
             </value>
             <value name="PERIOD">
-              <block type="math_number" id="]9An/qmu.{8Ym]fwO:Pq">
-                <field name="NUM">2</field>
+              <block type="variables_get" id="Ol}:q-G?7kMk}z7e|Yjp">
+                <field name="VAR">DurationAmount</field>
               </block>
             </value>
           </block>
