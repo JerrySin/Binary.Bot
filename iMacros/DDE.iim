@@ -1,0 +1,27 @@
+﻿VERSION BUILD=9030808 RECORDER=FX
+SET !ERRORIGNORE YES
+SET !TIMEOUT_PAGE 4
+TAB T=1
+'TAG POS=1 TYPE=DIV ATTR=ID:gmt-clock:* EXTRACT=TXT
+WAIT SECONDS=1.9
+TAG POS=1 TYPE=SPAN ATTR=ID:spot EXTRACT=TXT
+'prompt {{!EXTRACT}}
+'SET !VAR1 {{!EXTRACT}}
+'SET !EXTRACT NULL
+'SAVE TYPE=EXTRACT FOLDER=*C:\Users\Shivtra\Desktop\Time and Data FILE=Book1.csv
+'TAG POS=1 TYPE=DIV ATTR=ID:con2_ileinner extract=txt
+'SET !VAR2 {{!EXTRACT}}
+'set !extract null
+'TAG POS=1 TYPE=DIV ATTR=ID:con10_ileinner extract=txt
+'SET !VAR3 {{!EXTRACT}}<SP>Ext.<Sp>
+'set !extract null
+'TAG POS=1 TYPE=DIV ATTR=ID:00N30000002eJcD_ileinner extract=txt
+'ADD !VAR3 {{!EXTRACT}}
+'set !extract null
+'ADD !EXTRACT {{!var1}}
+'ADD !EXTRACT {{!var2}}
+'ADD !EXTRACT {{!var3}}
+SAVEAS TYPE=EXTRACT FOLDER=/Users/dev/iMacros/Macros/ FILE=DData.csv
+
+
+

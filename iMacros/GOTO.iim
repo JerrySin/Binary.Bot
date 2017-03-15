@@ -1,0 +1,8 @@
+﻿VERSION BUILD=9030808 RECORDER=FX
+SET !ERRORIGNORE YES
+SET !TIMEOUT_PAGE 4
+TAB T=1
+URL GOTO=https://www.binary.com/en/trading.html?currency=USD&market=volidx&date_start=now&expiry_type=endtime&amount=10&amount_type=payout&expiry_date=2017-03-15&expiry_time=08:17&underlying=R_100&formname=risefall
+TAB OPEN
+TAB T=2
+URL GOTO=https://webtrader.binary.com/v2.1.23/main.html?affiliates=true&instrument=R_100&timePeriod=1t&gtm=true&lang=en&hideOverlay=false&hideShare=false&timezone=GMT+0&hideFooter=false
