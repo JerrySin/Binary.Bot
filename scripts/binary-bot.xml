@@ -125,8 +125,28 @@
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="purchase" id="Q;`vp48|v7pG%t@W6`uQ">
-                    <field name="PURCHASE_LIST">CALL</field>
+                  <block type="notify" id="/Zs:.|b#e@l2oCHv7KLn">
+                    <field name="NOTIFICATION_TYPE">success</field>
+                    <value name="MESSAGE">
+                      <block type="text_join" id="gHx(;LhRqgYDyO4m2#S,">
+                        <mutation items="2"></mutation>
+                        <value name="ADD0">
+                          <block type="text" id=":2kEo]t_QOR{k4-uvGL/">
+                            <field name="TEXT">RSI: </field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="variables_get" id="FreitFS|Cngzn0-ySp#q">
+                            <field name="VAR">RSI</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="purchase" id="Q;`vp48|v7pG%t@W6`uQ">
+                        <field name="PURCHASE_LIST">CALL</field>
+                      </block>
+                    </next>
                   </block>
                 </statement>
               </block>
@@ -136,29 +156,8 @@
       </block>
     </statement>
   </block>
-  <block type="tick_analysis" id="k$V%vZqs|n[+O$SDHeaT" x="550" y="361">
-    <statement name="TICKANALYSIS_STACK">
-      <block type="notify" id="/Zs:.|b#e@l2oCHv7KLn">
-        <field name="NOTIFICATION_TYPE">success</field>
-        <value name="MESSAGE">
-          <block type="text_join" id="gHx(;LhRqgYDyO4m2#S,">
-            <mutation items="2"></mutation>
-            <value name="ADD0">
-              <block type="text" id=":2kEo]t_QOR{k4-uvGL/">
-                <field name="TEXT">RSI: </field>
-              </block>
-            </value>
-            <value name="ADD1">
-              <block type="variables_get" id="FreitFS|Cngzn0-ySp#q">
-                <field name="VAR">RSI</field>
-              </block>
-            </value>
-          </block>
-        </value>
-      </block>
-    </statement>
-  </block>
-  <block type="variables_get" id="Ol}:q-G?7kMk}z7e|Yjp" disabled="true" x="840" y="610">
+  <block type="tick_analysis" id="k$V%vZqs|n[+O$SDHeaT" disabled="true" x="550" y="361"></block>
+  <block type="variables_get" id="Ol}:q-G?7kMk}z7e|Yjp" disabled="true" x="567" y="458">
     <field name="VAR">DurationAmount</field>
   </block>
   <block type="during_purchase" id="@G%][.+GU_K^7%1dgfoR" x="0" y="702">
@@ -459,7 +458,7 @@
       </block>
     </statement>
   </block>
-  <block type="math_arithmetic" id="CMI%Z,[mpBt^%ihe,TF0" disabled="true" x="0" y="1553">
+  <block type="math_arithmetic" id="CMI%Z,[mpBt^%ihe,TF0" disabled="true" x="634" y="1489">
     <field name="OP">MULTIPLY</field>
     <value name="A">
       <shadow type="math_number" id="iG=1-20#sM+Jc!u8BThl">
