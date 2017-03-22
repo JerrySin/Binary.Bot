@@ -31,3 +31,14 @@ def get_mean_index(df1):
 
 if __name__ == "__main__":
     printData()
+
+# pandas data frame
+# .max()
+# .min()
+# .mean()
+
+
+# pyp lot
+# .xlabel()
+# .ylabel()
+# 

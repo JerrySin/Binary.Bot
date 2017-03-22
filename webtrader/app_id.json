@@ -8,3 +8,19 @@
   "https://arnabk.github.io/webtrader/development/" : 1149,
   "http://localhost:9001" : 2751
 }
+
+
+{
+  "echo_req":
+  {
+    "ticks":"R_100"
+  },
+  "msg_type":"tick",
+  "tick":
+  {
+    "epoch":1490131236,
+    "id":"7f3536b3-5d8f-66e8-757a-38c727dbcfee",
+    "quote":"15053.30",
+    "symbol":"R_100"
+  }
+}
