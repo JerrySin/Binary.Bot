@@ -3,6 +3,9 @@ import json
 import time
 from pymongo import MongoClient
 
+
+
+
 def on_open(ws):
     json_data = json.dumps({'ticks':'R_100'})
     ws.send(json_data)

@@ -12,7 +12,7 @@ def on_message(ws, message):
     epoch = response['epoch']
     quote = response['quote']
 
-    #print(response)
+    print(response)
 
     # get current timestamp
     #timestamp1 = time.time()
@@ -30,7 +30,7 @@ def on_message(ws, message):
     #print(localTimeString)
     #print(gmtTimeString)
 
-    savetoDB("ticks", response)
+    # savetoDB("ticks", response)
     # print('ticks update: %s' % message)
 
 def savetoDB(collectName, tickResponse):

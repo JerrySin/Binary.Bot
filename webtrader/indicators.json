@@ -1,26 +1,93 @@
 {
   "atr": {
     "id": "atr",
+    "usage_description": "",
     "long_display_name": "Average True Range",
     "short_display_name": "ATR",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 100, "value": 14, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#FA6B0D", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 100,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#FA6B0D",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#FA6B0D", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#FA6B0D",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#FA6B0D", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#FA6B0D", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#FA6B0D",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#FA6B0D",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -30,16 +97,45 @@
   },
   "ema": {
     "id": "ema",
+    "usage_description": "",
     "long_display_name": "Exponential Moving Average",
     "short_display_name": "EMA",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 100, "value": 21, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#E14906", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 100,
+        "value": 21,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#E14906",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -48,26 +144,93 @@
   },
   "rsi": {
     "id": "rsi",
+    "usage_description": "",
     "long_display_name": "Relative Strength Index",
     "short_display_name": "RSI",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#806C3D", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#806C3D",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#806C3D", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#806C3D",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#806C3D", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#806C3D", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#806C3D",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#806C3D",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -77,16 +240,45 @@
   },
   "sma": {
     "id": "sma",
+    "usage_description": "",
     "long_display_name": "Simple Moving Average",
     "short_display_name": "SMA",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 21, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#50B3AA", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 21,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#50B3AA",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -95,24 +287,76 @@
   },
   "roc": {
     "id": "roc",
+    "usage_description": "",
     "long_display_name": "Rate Of Change",
     "short_display_name": "ROC",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#319F67", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#319F67",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#319F67", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#319F67",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [ ]
+      "values": []
     },
     "category": [
       "Momentum Indicators"
@@ -121,14 +365,31 @@
   },
   "typprice": {
     "id": "typprice",
+    "usage_description": "",
     "long_display_name": "Typical Price",
     "short_display_name": "TYPPRICE",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#ECD078", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"}
+    "fields": [{
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#ECD078",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      }
     ],
     "category": [
       "Price Transformation"
@@ -138,24 +399,76 @@
   },
   "willr": {
     "id": "willr",
+    "usage_description": "",
     "long_display_name": "Williams' %R",
     "short_display_name": "WILLR",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#D95B43", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#D95B43",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#D95B43", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#D95B43",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [ ]
+      "values": []
     },
     "category": [
       "Momentum Indicators"
@@ -164,24 +477,76 @@
   },
   "rocp": {
     "id": "rocp",
+    "usage_description": "",
     "long_display_name": "Rate Of Change Percentage",
     "short_display_name": "ROCP",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#C02942", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#C02942",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#C02942", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#C02942",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [ ]
+      "values": []
     },
     "category": [
       "Momentum Indicators"
@@ -190,24 +555,76 @@
   },
   "rocr": {
     "id": "rocr",
+    "usage_description": "",
     "long_display_name": "Rate Of Change Ratio",
     "short_display_name": "ROCR",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#542437", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#542437",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#542437", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#542437",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [ ]
+      "values": []
     },
     "category": [
       "Momentum Indicators"
@@ -216,16 +633,45 @@
   },
   "min": {
     "id": "min",
+    "usage_description": "",
     "long_display_name": "Minimum",
     "short_display_name": "MIN",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 21, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#53777A", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 21,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#53777A",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Statistical Functions"
@@ -234,16 +680,45 @@
   },
   "max": {
     "id": "max",
+    "usage_description": "",
     "long_display_name": "Maximum",
     "short_display_name": "MAX",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 21, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#556270", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 21,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#556270",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Statistical Functions"
@@ -252,24 +727,76 @@
   },
   "sum": {
     "id": "sum",
+    "usage_description": "",
     "long_display_name": "Summation",
     "short_display_name": "SUM",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#4ECDC4", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#4ECDC4",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#4ECDC4", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#4ECDC4",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [ ]
+      "values": []
     },
     "category": [
       "Statistical Functions"
@@ -278,16 +805,45 @@
   },
   "wma": {
     "id": "wma",
+    "usage_description": "",
     "long_display_name": "Weighted Moving Average",
     "short_display_name": "WMA",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 21, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#C7F464", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 21,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#C7F464",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -296,16 +852,45 @@
   },
   "tema": {
     "id": "tema",
+    "usage_description": "",
     "long_display_name": "Triple Exponential Moving Average",
     "short_display_name": "TEMA",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 21, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#FF6B6B", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 21,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#FF6B6B",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -314,16 +899,45 @@
   },
   "trima": {
     "id": "trima",
+    "usage_description": "",
     "long_display_name": "Triangular Moving Average",
     "short_display_name": "TRIMA",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 21, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#C44D58", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 21,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#C44D58",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -332,26 +946,93 @@
   },
   "natr": {
     "id": "natr",
+    "usage_description": "",
     "long_display_name": "Normalized Average True Range",
     "short_display_name": "NATR",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#351330", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#351330",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#351330", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#351330",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#351330", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#351330", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#351330",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#351330",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -361,22 +1042,62 @@
   },
   "bop": {
     "id": "bop",
+    "usage_description": "",
     "long_display_name": "Balance of Power",
     "short_display_name": "BOP",
     "editable": true,
-    "fields": [
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#424254", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"}
+    "fields": [{
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#424254",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#424254", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#424254",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [ ]
+      "values": []
     },
     "category": [
       "Momentum Indicators"
@@ -385,9 +1106,10 @@
   },
   "cdl2crows": {
     "id": "cdl2crows",
+    "usage_description": "",
     "long_display_name": "Two Crows",
     "short_display_name": "CDL2CROWS",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/two_crows.png"
     },
@@ -398,9 +1120,10 @@
   },
   "cdl3blackcrows": {
     "id": "cdl3blackcrows",
+    "usage_description": "",
     "long_display_name": "Three Black Crows",
     "short_display_name": "CDL3BLACKCROWS",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/three_black_crows.png"
     },
@@ -411,9 +1134,10 @@
   },
   "cdl3inside": {
     "id": "cdl3inside",
+    "usage_description": "",
     "long_display_name": "Three Inside Up/Down",
     "short_display_name": "CDL3INSIDE",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/three_inside_up_down.png"
     },
@@ -424,9 +1148,10 @@
   },
   "cdl3linestrike": {
     "id": "cdl3linestrike",
+    "usage_description": "",
     "long_display_name": "Three-Line Strike",
     "short_display_name": "CDL3LINESTRIKE",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/three_line_strike.png"
     },
@@ -437,9 +1162,10 @@
   },
   "cdl3outside": {
     "id": "cdl3outside",
+    "usage_description": "",
     "long_display_name": "Three Outside Up/Down",
     "short_display_name": "CDL3OUTSIDE",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/three_outside_up_down.png"
     },
@@ -450,9 +1176,10 @@
   },
   "cdl3starssouth": {
     "id": "cdl3starssouth",
+    "usage_description": "",
     "long_display_name": "Three Stars In The South",
     "short_display_name": "CDL3STARSSOUTH",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/three_stars_in_the_south.png"
     },
@@ -463,9 +1190,10 @@
   },
   "cdl3whitesoldiers": {
     "id": "cdl3whitesoldiers",
+    "usage_description": "",
     "long_display_name": "Three Advancing White Soldiers",
     "short_display_name": "CDL3WHITESOLDIERS",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/three_white_soldiers.png"
     },
@@ -476,9 +1204,10 @@
   },
   "cdldoji": {
     "id": "cdldoji",
+    "usage_description": "",
     "long_display_name": "Doji",
     "short_display_name": "CDLDOJI",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/doji.png"
     },
@@ -489,9 +1218,10 @@
   },
   "cdlabandonedbaby": {
     "id": "cdlabandonedbaby",
+    "usage_description": "",
     "long_display_name": "Abandoned Baby",
     "short_display_name": "CDLABANDONEDBABY",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/abandoned_baby.png"
     },
@@ -502,9 +1232,10 @@
   },
   "cdlclosingmarubozu": {
     "id": "cdlclosingmarubozu",
+    "usage_description": "",
     "long_display_name": "Closing Marubozu",
     "short_display_name": "CDLCLOSINGMARUBOZU",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/closing_marubozu.png"
     },
@@ -515,9 +1246,10 @@
   },
   "cdldojistar": {
     "id": "cdldojistar",
+    "usage_description": "",
     "long_display_name": "Doji Star",
     "short_display_name": "CDLDOJISTAR",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/doji_star.png"
     },
@@ -528,9 +1260,10 @@
   },
   "cdlthrusting": {
     "id": "cdlthrusting",
+    "usage_description": "",
     "long_display_name": "Thrusting Pattern",
     "short_display_name": "CDLTHRUSTING",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/thrusting_pattern.png"
     },
@@ -541,22 +1274,85 @@
   },
   "bbands": {
     "id": "bbands",
+    "usage_description": "",
     "long_display_name": "Bollinger Bands",
     "short_display_name": "BBANDS",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Price", "key": "appliedTo", "value": 3, "type": "price"},
-      {"title": "Time Period", "key": "period", "min": 1, "max": 50, "value": 20, "type": "slider"},
-      {"title": "NB Dev Up", "key": "devUp", "min": 1, "max": 20, "value": 2, "type": "slider"},
-      {"title": "NB Dev Down", "key": "devDn", "min": 1, "max": 20, "value": 2, "type": "slider"},
-      {"title": "MA Type", "key": "maType", "value": "SMA", "type": "matype"},
-      {"title": "Middle Band Stroke", "key": "mdlBndStroke", "value": "rgb(205, 10, 10)", "type": "colorpicker"},
-      {"title": "Upper Band Stroke", "key": "uprBndStroke", "value": "rgb(11, 88, 162)", "type": "colorpicker"},
-      {"title": "Lower Band Stroke", "key": "lwrBndStroke", "value": "rgb(11, 88, 162)", "type": "colorpicker"},
-      {"title": "Background Color", "key": "backgroundColor", "value": "rgba(178, 191, 217, 0.3)", "type": "colorpicker"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"}
+    "fields": [{
+        "title": "Price",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "price"
+      },
+      {
+        "title": "Time Period",
+        "key": "period",
+        "min": 1,
+        "max": 50,
+        "value": 20,
+        "type": "slider"
+      },
+      {
+        "title": "NB Dev Up",
+        "key": "devUp",
+        "min": 1,
+        "max": 20,
+        "value": 2,
+        "type": "slider"
+      },
+      {
+        "title": "NB Dev Down",
+        "key": "devDn",
+        "min": 1,
+        "max": 20,
+        "value": 2,
+        "type": "slider"
+      },
+      {
+        "title": "MA Type",
+        "key": "maType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Middle Band Stroke",
+        "key": "mdlBndStroke",
+        "value": "rgb(205, 10, 10)",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Upper Band Stroke",
+        "key": "uprBndStroke",
+        "value": "rgb(11, 88, 162)",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Lower Band Stroke",
+        "key": "lwrBndStroke",
+        "value": "rgb(11, 88, 162)",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Background Color",
+        "key": "backgroundColor",
+        "value": "rgba(178, 191, 217, 0.3)",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      }
     ],
     "category": [
       "Momentum Indicators"
@@ -565,9 +1361,10 @@
   },
   "cdlshootingstar": {
     "id": "cdlshootingstar",
+    "usage_description": "",
     "long_display_name": "Shooting Star",
     "short_display_name": "CDLSHOOTINGSTAR",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/shooting_star.png"
     },
@@ -578,14 +1375,29 @@
   },
   "sar": {
     "id": "sar",
+    "usage_description": "",
     "long_display_name": "Parabolic SAR",
     "short_display_name": "SAR",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Acceleration", "key": "acceleration", "value": 0.02, "type": "numeric"},
-      {"title": "Maximum", "key": "maximum", "value": 0.2, "type": "numeric"},
-      {"title": "Stroke", "key": "stroke", "value": "#413D3D", "type": "colorpicker"}
+    "fields": [{
+        "title": "Acceleration",
+        "key": "acceleration",
+        "value": 0.02,
+        "type": "numeric"
+      },
+      {
+        "title": "Maximum",
+        "key": "maximum",
+        "value": 0.2,
+        "type": "numeric"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#413D3D",
+        "type": "colorpicker"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -594,22 +1406,90 @@
   },
   "macd": {
     "id": "macd",
+    "usage_description": "",
     "long_display_name": "Moving Average Convergence/Divergence",
     "short_display_name": "MACD",
     "editable": true,
-    "fields": [
-      {"title": "Price", "key": "appliedTo", "value": 3, "type": "price"},
-      {"title": "Fast Period", "key": "fastPeriod", "min": 1, "max": 50, "value": 12, "type": "slider"},
-      {"title": "Slow Period", "key": "slowPeriod", "min": 1, "max": 50, "value": 26, "type": "slider"},
-      {"title": "Signal Period", "key": "signalPeriod", "min": 1, "max": 50, "value": 9, "type": "slider"},
-      {"title": "Fast MA Type", "key": "fastMaType", "value": "SMA", "type": "matype"},
-      {"title": "Slow MA Type", "key": "slowMaType", "value": "SMA", "type": "matype"},
-      {"title": "Signal MA Type", "key": "signalMaType", "value": "SMA", "type": "matype"},
-      {"title": "MACD Line Stroke", "key": "macdStroke", "value": "#2a277a", "type": "colorpicker"},
-      {"title": "Signal Line Stroke", "key": "signalLineStroke", "value": "#ff0000", "type": "colorpicker"},
-      {"title": "Histogram Color", "key": "macdHstgrmColor", "value": "#7e9fc9", "type": "colorpicker"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"}
+    "fields": [{
+        "title": "Price",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "price"
+      },
+      {
+        "title": "Fast Period",
+        "key": "fastPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 12,
+        "type": "slider"
+      },
+      {
+        "title": "Slow Period",
+        "key": "slowPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 26,
+        "type": "slider"
+      },
+      {
+        "title": "Signal Period",
+        "key": "signalPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 9,
+        "type": "slider"
+      },
+      {
+        "title": "Fast MA Type",
+        "key": "fastMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Slow MA Type",
+        "key": "slowMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Signal MA Type",
+        "key": "signalMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "MACD Line Stroke",
+        "key": "macdStroke",
+        "value": "#2a277a",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Signal Line Stroke",
+        "key": "signalLineStroke",
+        "value": "#ff0000",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Histogram Color",
+        "key": "macdHstgrmColor",
+        "value": "#7e9fc9",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      }
     ],
     "category": [
       "Momentum Indicators"
@@ -618,9 +1498,10 @@
   },
   "cdlengulfing": {
     "id": "cdlengulfing",
+    "usage_description": "",
     "long_display_name": "Engulfing Pattern",
     "short_display_name": "CDLENGULFING",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/engulfing_pattern.png"
     },
@@ -631,31 +1512,77 @@
   },
   "wclprice": {
     "id": "wclprice",
+    "usage_description": "",
     "long_display_name": "Weighted Close Price",
     "short_display_name": "WCLPRICE",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#FA023C", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"}
+    "fields": [{
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#FA023C",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      }
     ],
     "category": [
       "Price Transformation"
-     ],
-     "description": "The Weighted Close indicator is simply an average of each day's price. It can be used to smooth out some of the inconstancy of a chart of closing prices, as it comprises information for the whole trading day."
+    ],
+    "description": "The Weighted Close indicator is simply an average of each day's price. It can be used to smooth out some of the inconstancy of a chart of closing prices, as it comprises information for the whole trading day."
   },
   "cci": {
     "id": "cci",
+    "usage_description": "",
     "long_display_name": "Commodity Channel Index",
     "short_display_name": "CCI",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 50, "value": 20, "type": "slider"},
-      {"title": "MA Type", "key": "maType", "value": "SMA", "type": "matype"},
-      {"title": "Stroke", "key": "stroke", "value": "#AAFF00", "type": "colorpicker"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 50,
+        "value": 20,
+        "type": "slider"
+      },
+      {
+        "title": "MA Type",
+        "key": "maType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#AAFF00",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      }
     ],
     "category": [
       "Momentum Indicators"
@@ -664,16 +1591,45 @@
   },
   "dema": {
     "id": "dema",
+    "usage_description": "",
     "long_display_name": "Double Exponential Moving Average",
     "short_display_name": "DEMA",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 21, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#FFAA00", "type": "colorpicker"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 21,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#FFAA00",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -682,18 +1638,61 @@
   },
   "kama": {
     "id": "kama",
+    "usage_description": "",
     "long_display_name": "Kaufman's Adaptive Moving Average",
     "short_display_name": "KAMA",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 10, "type": "slider"},
-      {"title": "Fast Period", "key": "fastPeriod", "min": 1, "max": 200, "value": 2, "type": "slider"},
-      {"title": "Slow Period", "key": "slowPeriod", "min": 1, "max": 200, "value": 30, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#FF00AA", "type": "colorpicker"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 10,
+        "type": "slider"
+      },
+      {
+        "title": "Fast Period",
+        "key": "fastPeriod",
+        "min": 1,
+        "max": 200,
+        "value": 2,
+        "type": "slider"
+      },
+      {
+        "title": "Slow Period",
+        "key": "slowPeriod",
+        "min": 1,
+        "max": 200,
+        "value": 30,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#FF00AA",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -702,17 +1701,54 @@
   },
   "t3": {
     "id": "t3",
+    "usage_description": "",
     "long_display_name": "Triple Exponential Moving Average (T3)",
     "short_display_name": "T3",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 21, "type": "slider"},
-      {"title": "Volume Factor", "key": "vFactor", "value": 0.7, "min": 0, "max": 1, "step": 0.01, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#FFAA00", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 21,
+        "type": "slider"
+      },
+      {
+        "title": "Volume Factor",
+        "key": "vFactor",
+        "value": 0.7,
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#FFAA00",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -721,17 +1757,51 @@
   },
   "hma": {
     "id": "hma",
+    "usage_description": "",
     "long_display_name": "Hull Moving Average",
     "short_display_name": "HMA",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 50, "value": 20, "type": "slider"},
-      {"title": "MA Type", "key": "maType", "value": "SMA", "type": "matype"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#031634", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 50,
+        "value": 20,
+        "type": "slider"
+      },
+      {
+        "title": "MA Type",
+        "key": "maType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#031634",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -740,16 +1810,45 @@
   },
   "lwma": {
     "id": "lwma",
+    "usage_description": "",
     "long_display_name": "Linearly Weighted Moving Average",
     "short_display_name": "LWMA",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 50, "value": 20, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#033649", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 50,
+        "value": 20,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#033649",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -758,16 +1857,45 @@
   },
   "smma": {
     "id": "smma",
+    "usage_description": "",
     "long_display_name": "Smoothed Moving Average",
     "short_display_name": "SMMA",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 50, "value": 20, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#036564", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 50,
+        "value": 20,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#036564",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -776,17 +1904,55 @@
   },
   "mama": {
     "id": "mama",
+    "usage_description": "",
     "long_display_name": "Mesa Adaptive Moving Average",
     "short_display_name": "MAMA",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Fast Limit", "key": "fastLimit", "value": 0.5, "min": 0, "max": 1, "step": 0.01, "type": "slider"},
-      {"title": "Slow Limit", "key": "slowLimit", "value": 0.05, "min": 0, "max": 1, "step": 0.01, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#CDB380", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Fast Limit",
+        "key": "fastLimit",
+        "value": 0.5,
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "type": "slider"
+      },
+      {
+        "title": "Slow Limit",
+        "key": "slowLimit",
+        "value": 0.05,
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#CDB380",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -795,9 +1961,10 @@
   },
   "cdlupsidegap2crows": {
     "id": "cdlupsidegap2crows",
+    "usage_description": "",
     "long_display_name": "Upside/Downside Gap Two Crows",
     "short_display_name": "CDLUPSIDEGAP2CROWS",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/upside_gap_two_crows.png"
     },
@@ -808,9 +1975,10 @@
   },
   "cdlxsidegap3methods": {
     "id": "cdlxsidegap3methods",
+    "usage_description": "",
     "long_display_name": "Upside/Downside Gap Three Methods",
     "short_display_name": "CDLXSIDEGAP3METHODS",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/gap_three_methods.png"
     },
@@ -821,9 +1989,10 @@
   },
   "cdltasukigap": {
     "id": "cdltasukigap",
+    "usage_description": "",
     "long_display_name": "Tasuki Gap",
     "short_display_name": "CDLTASUKIGAP",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/tasuki_gap.png"
     },
@@ -834,9 +2003,10 @@
   },
   "cdlpiercing": {
     "id": "cdlpiercing",
+    "usage_description": "",
     "long_display_name": "Piercing Pattern",
     "short_display_name": "CDLPIERCING",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/piercing_pattern.png"
     },
@@ -847,9 +2017,10 @@
   },
   "cdlbelthold": {
     "id": "cdlbelthold",
+    "usage_description": "",
     "long_display_name": "Belt-hold ",
     "short_display_name": "CDLBELTHOLD",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/belt_hold.png"
     },
@@ -860,9 +2031,10 @@
   },
   "cdldarkcloudcover": {
     "id": "cdldarkcloudcover",
+    "usage_description": "",
     "long_display_name": "Dark Cloud Cover ",
     "short_display_name": "CDLDARKCLOUDCOVER",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/dark_cloud_cover.png"
     },
@@ -873,9 +2045,10 @@
   },
   "cdlgapsidesidewhite": {
     "id": "cdlgapsidesidewhite",
+    "usage_description": "",
     "long_display_name": "Up/Down-Gap Side-By-Side White Lines",
     "short_display_name": "CDLGAPSIDESIDEWHITE",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/side_by_side_white_line.png"
     },
@@ -886,9 +2059,10 @@
   },
   "cdltakuri": {
     "id": "cdltakuri",
+    "usage_description": "",
     "long_display_name": "Takuri (Dragonfly Doji with very long lower shadow)",
     "short_display_name": "CDLTAKURI",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/takuri_line.png"
     },
@@ -899,9 +2073,10 @@
   },
   "cdlharami": {
     "id": "cdlharami",
+    "usage_description": "",
     "long_display_name": "Harami Pattern",
     "short_display_name": "CDLHARAMI",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/harami_pattern.png"
     },
@@ -912,9 +2087,10 @@
   },
   "cdlhammer": {
     "id": "cdlhammer",
+    "usage_description": "",
     "long_display_name": "Hammer",
     "short_display_name": "CDLHAMMER",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/hammer.png"
     },
@@ -925,9 +2101,10 @@
   },
   "cdlhangingman": {
     "id": "cdlhangingman",
+    "usage_description": "",
     "long_display_name": "Hanging Man",
     "short_display_name": "CDLHANGINGMAN",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/hanging_man.png"
     },
@@ -938,9 +2115,10 @@
   },
   "cdlinvertedhammer": {
     "id": "cdlinvertedhammer",
+    "usage_description": "",
     "long_display_name": "Inverted Hammer",
     "short_display_name": "CDLINVERTEDHAMMER",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/inverted_hammer.png"
     },
@@ -951,9 +2129,10 @@
   },
   "cdlgravestonedoji": {
     "id": "cdlgravestonedoji",
+    "usage_description": "",
     "long_display_name": "Gravestone Doji",
     "short_display_name": "CDLGRAVESTONEDOJI",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/gravestone_doji.png"
     },
@@ -964,9 +2143,10 @@
   },
   "cdlharamicross": {
     "id": "cdlharamicross",
+    "usage_description": "",
     "long_display_name": "Harami Cross Pattern",
     "short_display_name": "CDLHARAMICROSS",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/harami_cross.png"
     },
@@ -977,9 +2157,10 @@
   },
   "cdlstalledpattern": {
     "id": "cdlstalledpattern",
+    "usage_description": "",
     "long_display_name": "Stalled Pattern",
     "short_display_name": "CDLSTALLEDPATTERN",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/salled_pattern.png"
     },
@@ -990,9 +2171,10 @@
   },
   "cdleveningstar": {
     "id": "cdleveningstar",
+    "usage_description": "",
     "long_display_name": "Evening Star",
     "short_display_name": "CDLEVENINGSTAR",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/evening_star.png"
     },
@@ -1003,9 +2185,10 @@
   },
   "cdlhighwave": {
     "id": "cdlhighwave",
+    "usage_description": "",
     "long_display_name": "High-Wave Candle",
     "short_display_name": "CDLHIGHWAVE",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/high_wave.png"
     },
@@ -1016,9 +2199,10 @@
   },
   "cdlhikkake": {
     "id": "cdlhikkake",
+    "usage_description": "",
     "long_display_name": "Hikkake Pattern",
     "short_display_name": "CDLHIKKAKE",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/hikkake.png"
     },
@@ -1029,9 +2213,10 @@
   },
   "cdlhomingpigeon": {
     "id": "cdlhomingpigeon",
+    "usage_description": "",
     "long_display_name": "Homing Pigeon",
     "short_display_name": "CDLHOMINGPIGEON",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/homing_pigeon.png"
     },
@@ -1042,9 +2227,10 @@
   },
   "cdltristar": {
     "id": "cdltristar",
+    "usage_description": "",
     "long_display_name": "Tristar Pattern",
     "short_display_name": "CDLTRISTAR",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/tristar.png"
     },
@@ -1055,9 +2241,10 @@
   },
   "cdllongline": {
     "id": "cdllongline",
+    "usage_description": "",
     "long_display_name": "Long Line Candle",
     "short_display_name": "CDLLONGLINE",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/long_line_candle.png"
     },
@@ -1068,9 +2255,10 @@
   },
   "cdlmarubozu": {
     "id": "cdlmarubozu",
+    "usage_description": "",
     "long_display_name": "Marubozu",
     "short_display_name": "CDLMARUBOZU",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/marubozu.png"
     },
@@ -1081,9 +2269,10 @@
   },
   "cdlkicking": {
     "id": "cdlkicking",
+    "usage_description": "",
     "long_display_name": "Kicking",
     "short_display_name": "CDLKICKING",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/kicking.png"
     },
@@ -1094,9 +2283,10 @@
   },
   "cdlmatchinglow": {
     "id": "cdlmatchinglow",
+    "usage_description": "",
     "long_display_name": "Matching Low",
     "short_display_name": "CDLMATCHINGLOW",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/matching_low.png"
     },
@@ -1107,9 +2297,10 @@
   },
   "cdlladderbottom": {
     "id": "cdlladderbottom",
+    "usage_description": "",
     "long_display_name": "Ladder Bottom",
     "short_display_name": "CDLLADDERBOTTOM",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/ladder_bottom.png"
     },
@@ -1120,9 +2311,10 @@
   },
   "cdlrisefall3methods": {
     "id": "cdlrisefall3methods",
+    "usage_description": "",
     "long_display_name": "Rising/Falling Three Methods",
     "short_display_name": "CDLRISEFALL3METHODS",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/rising_falling_three_methods.png"
     },
@@ -1133,9 +2325,10 @@
   },
   "cdlidentical3crows": {
     "id": "cdlidentical3crows",
+    "usage_description": "",
     "long_display_name": "Identical Three Crows",
     "short_display_name": "CDLIDENTICAL3CROWS",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/identical_three_crows.png"
     },
@@ -1146,9 +2339,10 @@
   },
   "cdlmorningstar": {
     "id": "cdlmorningstar",
+    "usage_description": "",
     "long_display_name": "Morning Star",
     "short_display_name": "CDLMORNINGSTAR",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/morning_star.png"
     },
@@ -1159,9 +2353,10 @@
   },
   "cdlspinningtop": {
     "id": "cdlspinningtop",
+    "usage_description": "",
     "long_display_name": "Spinning Top",
     "short_display_name": "CDLSPINNINGTOP",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/spinning_top.png"
     },
@@ -1172,9 +2367,10 @@
   },
   "cdldragonflydoji": {
     "id": "cdldragonflydoji",
+    "usage_description": "",
     "long_display_name": "Dragonfly Doji",
     "short_display_name": "CDLDRAGONFLYDOJI",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/dragonfly_doji.png"
     },
@@ -1185,9 +2381,10 @@
   },
   "cdllongleggeddoji": {
     "id": "cdllongleggeddoji",
+    "usage_description": "",
     "long_display_name": "Long Legged Doji",
     "short_display_name": "CDLLONGLEGGEDDOJI",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/long_legged_doji.png"
     },
@@ -1198,9 +2395,10 @@
   },
   "cdleveningdojistar": {
     "id": "cdleveningdojistar",
+    "usage_description": "",
     "long_display_name": "Evening Doji Star",
     "short_display_name": "CDLEVENINGDOJISTAR",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/evening_doji_star.png"
     },
@@ -1211,9 +2409,10 @@
   },
   "cdlbreakaway": {
     "id": "cdlbreakaway",
+    "usage_description": "",
     "long_display_name": "Breakaway",
     "short_display_name": "CDLBREAKAWAY",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/breakaway_pattern.png"
     },
@@ -1224,9 +2423,10 @@
   },
   "cdladvanceblock": {
     "id": "cdladvanceblock",
+    "usage_description": "",
     "long_display_name": "Advance Block",
     "short_display_name": "CDLADVANCEBLOCK",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/advance_block.png"
     },
@@ -1237,9 +2437,10 @@
   },
   "cdlcounterattack": {
     "id": "cdlcounterattack",
+    "usage_description": "",
     "long_display_name": "Counterattack",
     "short_display_name": "CDLCOUNTERATTACK",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/counterattack.png"
     },
@@ -1250,9 +2451,10 @@
   },
   "cdlmorningdojistar": {
     "id": "cdlmorningdojistar",
+    "usage_description": "",
     "long_display_name": "Morning Doji Star",
     "short_display_name": "CDLMORNINGDOJISTAR",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/morning_doji_star.png"
     },
@@ -1263,9 +2465,10 @@
   },
   "cdlinneck": {
     "id": "cdlinneck",
+    "usage_description": "",
     "long_display_name": "In-Neck Pattern",
     "short_display_name": "CDLINNECK",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/in_neck.png"
     },
@@ -1276,9 +2479,10 @@
   },
   "cdlonneck": {
     "id": "cdlonneck",
+    "usage_description": "",
     "long_display_name": "On-Neck Pattern",
     "short_display_name": "CDLONNECK",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/on_neck.png"
     },
@@ -1289,9 +2493,10 @@
   },
   "cdlrickshawman": {
     "id": "cdlrickshawman",
+    "usage_description": "",
     "long_display_name": "Rickshaw Man",
     "short_display_name": "CDLRICKSHAWMAN",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/rickshaw_man.png"
     },
@@ -1302,9 +2507,10 @@
   },
   "cdlunique3river": {
     "id": "cdlunique3river",
+    "usage_description": "",
     "long_display_name": "Unique 3 River",
     "short_display_name": "CDLUNIQUE3RIVER",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/three_river.png"
     },
@@ -1315,9 +2521,10 @@
   },
   "cdlseparatinglines": {
     "id": "cdlseparatinglines",
+    "usage_description": "",
     "long_display_name": "Separating Lines",
     "short_display_name": "CDLSEPARATINGLINES",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/separating_lines.png"
     },
@@ -1328,9 +2535,10 @@
   },
   "cdlmathold": {
     "id": "cdlmathold",
+    "usage_description": "",
     "long_display_name": "Mat Hold",
     "short_display_name": "CDLMATHOLD",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/mat_hold.png"
     },
@@ -1341,9 +2549,10 @@
   },
   "cdlsticksandwich": {
     "id": "cdlsticksandwich",
+    "usage_description": "",
     "long_display_name": "Stick Sandwich",
     "short_display_name": "CDLSTICKSANDWICH",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/stick_sandwich.png"
     },
@@ -1354,9 +2563,10 @@
   },
   "cdlkickingbylength": {
     "id": "cdlkickingbylength",
+    "usage_description": "",
     "long_display_name": "Kicking - bull/bear determined by the longer marubozu",
     "short_display_name": "CDLKICKINGBYLENGTH",
-    "fields": [ ],
+    "fields": [],
     "cdl_indicator": {
       "image": "images/indicators/kicking.png"
     },
@@ -1367,23 +2577,70 @@
   },
   "stddev": {
     "id": "stddev",
+    "usage_description": "",
     "long_display_name": "Standard Deviation",
     "short_display_name": "STDDEV",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 20, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#5A0397", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 20,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#5A0397",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#5A0397", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#5A0397",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [ ]
+      "values": []
     },
     "category": [
       "Statistical Functions"
@@ -1392,22 +2649,90 @@
   },
   "ppo": {
     "id": "ppo",
+    "usage_description": "",
     "long_display_name": "Percentage Price Oscillator",
     "short_display_name": "PPO",
     "editable": true,
-    "fields": [
-      {"title": "Price", "key": "appliedTo", "value": 3, "type": "price"},
-      {"title": "Fast Period", "key": "fastPeriod", "min": 1, "max": 50, "value": 12, "type": "slider"},
-      {"title": "Slow Period", "key": "slowPeriod", "min": 1, "max": 50, "value": 26, "type": "slider"},
-      {"title": "Signal Period", "key": "signalPeriod", "min": 1, "max": 50, "value": 9, "type": "slider"},
-      {"title": "Fast MA Type", "key": "fastMaType", "value": "SMA", "type": "matype"},
-      {"title": "Slow MA Type", "key": "slowMaType", "value": "SMA", "type": "matype"},
-      {"title": "Signal MA Type", "key": "signalMaType", "value": "SMA", "type": "matype"},
-      {"title": "PPO Line Stroke", "key": "ppoStroke", "value": "#2a277a", "type": "colorpicker"},
-      {"title": "Signal Line Stroke", "key": "signalLineStroke", "value": "#ff0000", "type": "colorpicker"},
-      {"title": "Histogram Color", "key": "ppoHstgrmColor", "value": "#7e9fc9", "type": "colorpicker"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"}
+    "fields": [{
+        "title": "Price",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "price"
+      },
+      {
+        "title": "Fast Period",
+        "key": "fastPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 12,
+        "type": "slider"
+      },
+      {
+        "title": "Slow Period",
+        "key": "slowPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 26,
+        "type": "slider"
+      },
+      {
+        "title": "Signal Period",
+        "key": "signalPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 9,
+        "type": "slider"
+      },
+      {
+        "title": "Fast MA Type",
+        "key": "fastMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Slow MA Type",
+        "key": "slowMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Signal MA Type",
+        "key": "signalMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "PPO Line Stroke",
+        "key": "ppoStroke",
+        "value": "#2a277a",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Signal Line Stroke",
+        "key": "signalLineStroke",
+        "value": "#ff0000",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Histogram Color",
+        "key": "ppoHstgrmColor",
+        "value": "#7e9fc9",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      }
     ],
     "category": [
       "Momentum Indicators"
@@ -1416,26 +2741,93 @@
   },
   "trange": {
     "id": "trange",
+    "usage_description": "",
     "long_display_name": "True Range",
     "short_display_name": "TRANGE",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#890357", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#890357",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#890357", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#890357",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#890357", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#890357", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#890357",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#890357",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1445,26 +2837,94 @@
   },
   "stochrsi": {
     "id": "stochrsi",
+    "usage_description": "",
     "long_display_name": "Stochastic Relative Strength Index",
     "short_display_name": "STOCHRSI",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#DEA02D", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#DEA02D",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 0, "max": 2, "value": 1, "step": 0.01, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#DEA02D", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 0,
+          "max": 2,
+          "value": 1,
+          "step": 0.01,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#DEA02D",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#DEA02D", "dashStyle": "Dash", "label": { "text": 0.3}, "value": 0.3, "width" : 1},
-        {"color": "#DEA02D", "dashStyle": "Dash", "label": { "text": 0.7}, "value": 0.7, "width" : 1}
+      "values": [{
+          "color": "#DEA02D",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 0.3
+          },
+          "value": 0.3,
+          "width": 1
+        },
+        {
+          "color": "#DEA02D",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 0.7
+          },
+          "value": 0.7,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1474,24 +2934,76 @@
   },
   "mom": {
     "id": "mom",
+    "usage_description": "",
     "long_display_name": "Momentum",
     "short_display_name": "MOM",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#6299FD", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#6299FD",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": -40, "max": 20, "value": 0, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#6299FD", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": -40,
+          "max": 20,
+          "value": 0,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#6299FD",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [ ]
+      "values": []
     },
     "category": [
       "Momentum Indicators"
@@ -1500,17 +3012,61 @@
   },
   "alma": {
     "id": "alma",
+    "usage_description": "",
     "long_display_name": "Arnaud Legoux Moving Average",
     "short_display_name": "ALMA",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 9, "type": "slider"},
-      {"title": "Offset", "key": "offset", "min": 0, "max": 1, "value": 0.85, "step": 0.01, "type": "slider"},
-      {"title": "Sigma", "key": "sigma", "min": 1, "max": 200, "value": 6, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#1693A5", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 9,
+        "type": "slider"
+      },
+      {
+        "title": "Offset",
+        "key": "offset",
+        "min": 0,
+        "max": 1,
+        "value": 0.85,
+        "step": 0.01,
+        "type": "slider"
+      },
+      {
+        "title": "Sigma",
+        "key": "sigma",
+        "min": 1,
+        "max": 200,
+        "value": 6,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#1693A5",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "onChartIndicator": true,
     "category": [
@@ -1520,26 +3076,93 @@
   },
   "aroon": {
     "id": "aroon",
+    "usage_description": "",
     "long_display_name": "Aroon",
     "short_display_name": "AROON",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 25, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Aroon Up Stroke", "key": "aroonUpStroke", "value": "#02AAB0", "type": "colorpicker"},
-      {"title": "Aroon Down Stroke", "key": "aroonDownStroke", "value": "#00CDAC", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 25,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Aroon Up Stroke",
+        "key": "aroonUpStroke",
+        "value": "#02AAB0",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Aroon Down Stroke",
+        "key": "aroonDownStroke",
+        "value": "#00CDAC",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#DEA02D", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#DEA02D",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#02AAB0", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#00CDAC", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#02AAB0",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#00CDAC",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1549,25 +3172,87 @@
   },
   "aroonosc": {
     "id": "aroonosc",
+    "usage_description": "",
     "long_display_name": "Aroon Oscillator",
     "short_display_name": "AROONOSC",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 25, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#7FFF24", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 25,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#7FFF24",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#7FFF24", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#7FFF24",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#7FFF24", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#7FFF24", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#7FFF24",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#7FFF24",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1577,27 +3262,99 @@
   },
   "ao": {
     "id": "ao",
+    "usage_description": "",
     "long_display_name": "Awesome Oscillator",
     "short_display_name": "AO",
     "editable": true,
-    "fields": [
-      {"title": "Short Term Period", "key": "shortPeriod", "min": 5, "max": 35, "value": 5, "type": "slider"},
-      {"title": "Long Term Period", "key": "longPeriod", "min": 5, "max": 35, "value": 35, "type": "slider"},
-      {"title": "Short MA Type", "key": "shortMaType", "value": "SMA", "type": "matype"},
-      {"title": "Long MA Type", "key": "longMaType", "value": "SMA", "type": "matype"},
-      {"title": "Histogram Color For Higher Values", "key": "aoHighStroke", "value": "#00C176", "type": "colorpicker"},
-      {"title": "Histogram Color For Lower Values", "key": "aoLowStroke", "value": "#FF003C", "type": "colorpicker"}
+    "fields": [{
+        "title": "Short Term Period",
+        "key": "shortPeriod",
+        "min": 5,
+        "max": 35,
+        "value": 5,
+        "type": "slider"
+      },
+      {
+        "title": "Long Term Period",
+        "key": "longPeriod",
+        "min": 5,
+        "max": 35,
+        "value": 35,
+        "type": "slider"
+      },
+      {
+        "title": "Short MA Type",
+        "key": "shortMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Long MA Type",
+        "key": "longMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Histogram Color For Higher Values",
+        "key": "aoHighStroke",
+        "value": "#00C176",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Histogram Color For Lower Values",
+        "key": "aoLowStroke",
+        "value": "#FF003C",
+        "type": "colorpicker"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#FF003C", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#FF003C",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#FF003C", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#00C176", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#FF003C",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#00C176",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1607,23 +3364,71 @@
   },
   "var": {
     "id": "var",
+    "usage_description": "",
     "long_display_name": "Variance",
     "short_display_name": "VAR",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 20, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#058789", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 20,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#058789",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 0, "max": 0.005, "value": 0.001, "step": 0.0001, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#058789", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 0,
+          "max": 0.005,
+          "value": 0.001,
+          "step": 0.0001,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#058789",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [ ]
+      "values": []
     },
     "category": [
       "Statistical Functions"
@@ -1632,18 +3437,61 @@
   },
   "cks": {
     "id": "cks",
+    "usage_description": "",
     "long_display_name": "Chande Kroll Stop",
     "short_display_name": "CKS",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 10, "type": "slider"},
-      {"title": "Max/Min Period", "key": "maxMinPeriod", "min": 1, "max": 200, "value": 20, "type": "slider"},
-      {"title": "Multiplier", "key": "multiplier", "min": 1, "max": 50, "value": 3, "type": "slider"},
-      {"title": "Long Stop Line Stroke", "key": "longStopStroke", "value": "#00C176", "type": "colorpicker"},
-      {"title": "Short Stop Line Stroke", "key": "shortStopStroke", "value": "#FF003C", "type": "colorpicker"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 10,
+        "type": "slider"
+      },
+      {
+        "title": "Max/Min Period",
+        "key": "maxMinPeriod",
+        "min": 1,
+        "max": 200,
+        "value": 20,
+        "type": "slider"
+      },
+      {
+        "title": "Multiplier",
+        "key": "multiplier",
+        "min": 1,
+        "max": 50,
+        "value": 3,
+        "type": "slider"
+      },
+      {
+        "title": "Long Stop Line Stroke",
+        "key": "longStopStroke",
+        "value": "#00C176",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Short Stop Line Stroke",
+        "key": "shortStopStroke",
+        "value": "#FF003C",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      }
     ],
     "category": [
       "Volatility Indicators"
@@ -1652,26 +3500,93 @@
   },
   "cc": {
     "id": "cc",
+    "usage_description": "",
     "long_display_name": "Coppock Curve",
     "short_display_name": "CC",
     "editable": true,
-    "fields": [
-      {"title": "Short ROC Period", "key": "shortRocPeriod", "min": 1, "max": 200, "value": 11, "type": "slider"},
-      {"title": "Long ROC Period", "key": "longRocPeriod", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "WMA Period", "key": "wmaPeriod", "min": 1, "max": 200, "value": 10, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#503D2E", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Short ROC Period",
+        "key": "shortRocPeriod",
+        "min": 1,
+        "max": 200,
+        "value": 11,
+        "type": "slider"
+      },
+      {
+        "title": "Long ROC Period",
+        "key": "longRocPeriod",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "WMA Period",
+        "key": "wmaPeriod",
+        "min": 1,
+        "max": 200,
+        "value": 10,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#503D2E",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": -0.5, "max": 0.5, "value": 0, "step": 0.01, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#503D2E", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": -0.5,
+          "max": 0.5,
+          "value": 0,
+          "step": 0.01,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#503D2E",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [ ]
+      "values": []
     },
     "category": [
       "Momentum Indicators"
@@ -1680,28 +3595,107 @@
   },
   "chop": {
     "id": "chop",
+    "usage_description": "",
     "long_display_name": "Choppiness Index",
     "short_display_name": "CHOP",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 25, "type": "slider"},
-      {"title": "ATR Period", "key": "atrPeriod", "min": 1, "max": 200, "value": 25, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#D54B1A", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"},
-      {"title": "Plot Color", "key": "plotBands", "value": "rgba(178, 191, 217, 0.2)", "type": "plotcolor"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 25,
+        "type": "slider"
+      },
+      {
+        "title": "ATR Period",
+        "key": "atrPeriod",
+        "min": 1,
+        "max": 200,
+        "value": 25,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#D54B1A",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      },
+      {
+        "title": "Plot Color",
+        "key": "plotBands",
+        "value": "rgba(178, 191, 217, 0.2)",
+        "type": "plotcolor"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#D54B1A", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#D54B1A",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#D54B1A", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#D54B1A", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#D54B1A",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#D54B1A",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1711,27 +3705,100 @@
   },
   "adx": {
     "id": "adx",
+    "usage_description": "",
     "long_display_name": "Average Directional Movement Index",
     "short_display_name": "ADX",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "ADX MA Type", "key": "maType", "value": "SMA", "type": "matype"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#E21B5A", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "ADX MA Type",
+        "key": "maType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#E21B5A",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 0, "max": 1, "value": 0.5, "step": 0.01, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#E21B5A", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 0,
+          "max": 1,
+          "value": 0.5,
+          "step": 0.01,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#E21B5A",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#E21B5A", "dashStyle": "Dash", "label": { "text": 0.3}, "value": 0.3, "width" : 1},
-        {"color": "#E21B5A", "dashStyle": "Dash", "label": { "text": 0.7}, "value": 0.7, "width" : 1}
+      "values": [{
+          "color": "#E21B5A",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 0.3
+          },
+          "value": 0.3,
+          "width": 1
+        },
+        {
+          "color": "#E21B5A",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 0.7
+          },
+          "value": 0.7,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1741,29 +3808,112 @@
   },
   "dx": {
     "id": "dx",
+    "usage_description": "",
     "long_display_name": "Directional Movement Index",
     "short_display_name": "DX",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "DX MA Type", "key": "maType", "value": "SMA", "type": "matype"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "dxStroke", "value": "#7B6ED6", "type": "colorpicker"},
-      {"title": "+DI Stroke", "key": "plusDIStroke", "value": "#13CD4A", "type": "colorpicker"},
-      {"title": "-DI Stroke", "key": "minusDIStroke", "value": "#EC4401", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "DX MA Type",
+        "key": "maType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "dxStroke",
+        "value": "#7B6ED6",
+        "type": "colorpicker"
+      },
+      {
+        "title": "+DI Stroke",
+        "key": "plusDIStroke",
+        "value": "#13CD4A",
+        "type": "colorpicker"
+      },
+      {
+        "title": "-DI Stroke",
+        "key": "minusDIStroke",
+        "value": "#EC4401",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 0, "max": 1, "value": 0.5, "step": 0.01, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#13CD4A", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 0,
+          "max": 1,
+          "value": 0.5,
+          "step": 0.01,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#13CD4A",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#7B6ED6", "dashStyle": "Dash", "label": { "text": 0.3}, "value": 0.3, "width" : 1},
-        {"color": "#EC4401", "dashStyle": "Dash", "label": { "text": 0.7}, "value": 0.7, "width" : 1}
+      "values": [{
+          "color": "#7B6ED6",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 0.3
+          },
+          "value": 0.3,
+          "width": 1
+        },
+        {
+          "color": "#EC4401",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 0.7
+          },
+          "value": 0.7,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1773,27 +3923,100 @@
   },
   "adxr": {
     "id": "adxr",
+    "usage_description": "",
     "long_display_name": "Average Directional Movement Index Rating",
     "short_display_name": "ADXR",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 14, "type": "slider"},
-      {"title": "MA Type", "key": "maType", "value": "SMA", "type": "matype"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#9B0D94", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "MA Type",
+        "key": "maType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#9B0D94",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 0, "max": 1, "value": 0.5, "step": 0.01, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#9B0D94", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 0,
+          "max": 1,
+          "value": 0.5,
+          "step": 0.01,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#9B0D94",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#9B0D94", "dashStyle": "Dash", "label": { "text": 0.3}, "value": 0.3, "width" : 1},
-        {"color": "#9B0D94", "dashStyle": "Dash", "label": { "text": 0.7}, "value": 0.7, "width" : 1}
+      "values": [{
+          "color": "#9B0D94",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 0.3
+          },
+          "value": 0.3,
+          "width": 1
+        },
+        {
+          "color": "#9B0D94",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 0.7
+          },
+          "value": 0.7,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1803,27 +4026,97 @@
   },
   "apo": {
     "id": "apo",
+    "usage_description": "",
     "long_display_name": "Absolute Price Oscillator",
     "short_display_name": "APO",
     "editable": true,
-    "fields": [
-      {"title": "Fast Period", "key": "fastPeriod", "min": 1, "max": 50, "value": 12, "type": "slider"},
-      {"title": "Slow Period", "key": "slowPeriod", "min": 1, "max": 50, "value": 26, "type": "slider"},
-      {"title": "Fast MA Type", "key": "fastMaType", "value": "SMA", "type": "matype"},
-      {"title": "Slow MA Type", "key": "slowMaType", "value": "SMA", "type": "matype"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#229BC6", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Fast Period",
+        "key": "fastPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 12,
+        "type": "slider"
+      },
+      {
+        "title": "Slow Period",
+        "key": "slowPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 26,
+        "type": "slider"
+      },
+      {
+        "title": "Fast MA Type",
+        "key": "fastMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Slow MA Type",
+        "key": "slowMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#229BC6",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": -0.1, "max": 0.2, "value": 0, "step": 0.01, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#229BC6", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": -0.1,
+          "max": 0.2,
+          "value": 0,
+          "step": 0.01,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#229BC6",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [ ]
+      "values": []
     },
     "category": [
       "Momentum Indicators"
@@ -1832,29 +4125,113 @@
   },
   "stoch": {
     "id": "stoch",
+    "usage_description": "",
     "long_display_name": "Stochastic",
     "short_display_name": "STOCH  ",
     "editable": true,
-    "fields": [
-      {"title": "%K Period", "key": "fastKPeriod", "min": 1, "max": 50, "value": 14, "type": "slider"},
-      {"title": "%D Period", "key": "fastDPeriod", "min": 1, "max": 50, "value": 3, "type": "slider"},
-      {"title": "%D MA Type", "key": "fastDMaType", "value": "SMA", "type": "matype"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "%K Stroke", "key": "stroke", "value": "#060100", "type": "colorpicker"},
-      {"title": "%D Stroke", "key": "dStroke", "value": "#DD061C", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "%K Period",
+        "key": "fastKPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "%D Period",
+        "key": "fastDPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 3,
+        "type": "slider"
+      },
+      {
+        "title": "%D MA Type",
+        "key": "fastDMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "%K Stroke",
+        "key": "stroke",
+        "value": "#060100",
+        "type": "colorpicker"
+      },
+      {
+        "title": "%D Stroke",
+        "key": "dStroke",
+        "value": "#DD061C",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 0, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#DD061C", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 0,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#DD061C",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#060100", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#DD061C", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#060100",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#DD061C",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1864,30 +4241,119 @@
   },
   "stochf": {
     "id": "stochf",
+    "usage_description": "",
     "long_display_name": "Stochastic Fast",
     "short_display_name": "STOCHF",
     "editable": true,
-    "fields": [
-      {"title": "%K Period", "key": "fastKPeriod", "min": 1, "max": 50, "value": 14, "type": "slider"},
-      {"title": "%D Period", "key": "fastDPeriod", "min": 1, "max": 50, "value": 3, "type": "slider"},
-      {"title": "%K MA Type", "key": "fastKMaType", "value": "SMA", "type": "matype"},
-      {"title": "%D MA Type", "key": "fastDMaType", "value": "SMA", "type": "matype"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "%K Stroke", "key": "stroke", "value": "#060100", "type": "colorpicker"},
-      {"title": "%D Stroke", "key": "dStroke", "value": "#F2501A", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "%K Period",
+        "key": "fastKPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "%D Period",
+        "key": "fastDPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 3,
+        "type": "slider"
+      },
+      {
+        "title": "%K MA Type",
+        "key": "fastKMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "%D MA Type",
+        "key": "fastDMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "%K Stroke",
+        "key": "stroke",
+        "value": "#060100",
+        "type": "colorpicker"
+      },
+      {
+        "title": "%D Stroke",
+        "key": "dStroke",
+        "value": "#F2501A",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 0, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#F2501A", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 0,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#F2501A",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#060100", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#F2501A", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#060100",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#F2501A",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1897,32 +4363,133 @@
   },
   "stochs": {
     "id": "stochs",
+    "usage_description": "",
     "long_display_name": "Stochastic Slow",
     "short_display_name": "STOCHS",
     "editable": true,
-    "fields": [
-      {"title": "Fast %K Period", "key": "fastKPeriod", "min": 1, "max": 50, "value": 14, "type": "slider"},
-      {"title": "Slow %K Period", "key": "slowKPeriod", "min": 1, "max": 50, "value": 14, "type": "slider"},
-      {"title": "Slow %D Period", "key": "slowDPeriod", "min": 1, "max": 50, "value": 3, "type": "slider"},
-      {"title": "Fast %K MA Type", "key": "fastKMaType", "value": "SMA", "type": "matype"},
-      {"title": "Slow %K MA Type", "key": "slowKMaType", "value": "SMA", "type": "matype"},
-      {"title": "Slow %D MA Type", "key": "slowDMaType", "value": "SMA", "type": "matype"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "%K Stroke", "key": "stroke", "value": "#060100", "type": "colorpicker"},
-      {"title": "%D Stroke", "key": "dStroke", "value": "#C10329", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Fast %K Period",
+        "key": "fastKPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Slow %K Period",
+        "key": "slowKPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Slow %D Period",
+        "key": "slowDPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 3,
+        "type": "slider"
+      },
+      {
+        "title": "Fast %K MA Type",
+        "key": "fastKMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Slow %K MA Type",
+        "key": "slowKMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Slow %D MA Type",
+        "key": "slowDMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "%K Stroke",
+        "key": "stroke",
+        "value": "#060100",
+        "type": "colorpicker"
+      },
+      {
+        "title": "%D Stroke",
+        "key": "dStroke",
+        "value": "#C10329",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 0, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#C10329", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 0,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#C10329",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#060100", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#C10329", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#060100",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#C10329",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1932,17 +4499,51 @@
   },
   "dc": {
     "id": "dc",
+    "usage_description": "",
     "long_display_name": "Donchian Channel",
     "short_display_name": "DC",
     "editable": true,
     "onChartIndicator": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 100, "value": 21, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "High Stroke", "key": "highStroke", "value": "#782BD6", "type": "colorpicker"},
-      {"title": "Low Stroke", "key": "lowStroke", "value": "#F03B12", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 100,
+        "value": 21,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "High Stroke",
+        "key": "highStroke",
+        "value": "#782BD6",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Low Stroke",
+        "key": "lowStroke",
+        "value": "#F03B12",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Overlap Studies"
@@ -1951,28 +4552,109 @@
   },
   "ultosc": {
     "id": "ultosc",
+    "usage_description": "",
     "long_display_name": "Ultimate Oscillator",
     "short_display_name": "ULTOSC",
     "editable": true,
-    "fields": [
-      {"title": "Period 1", "key": "firstPeriod", "min": 1, "max": 50, "value": 7, "type": "slider"},
-      {"title": "Period 2", "key": "secondPeriod", "min": 1, "max": 50, "value": 14, "type": "slider"},
-      {"title": "Period 3", "key": "thirdPeriod", "min": 1, "max": 50, "value": 28, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#DCE53F", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period 1",
+        "key": "firstPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 7,
+        "type": "slider"
+      },
+      {
+        "title": "Period 2",
+        "key": "secondPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 14,
+        "type": "slider"
+      },
+      {
+        "title": "Period 3",
+        "key": "thirdPeriod",
+        "min": 1,
+        "max": 50,
+        "value": 28,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#DCE53F",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 1, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#DCE53F", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 1,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#DCE53F",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#DCE53F", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#DCE53F", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#DCE53F",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#DCE53F",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -1982,16 +4664,45 @@
   },
   "lsma": {
     "id": "lsma",
+    "usage_description": "",
     "long_display_name": "Least Squares Moving Average",
     "short_display_name": "LSMA",
     "editable": true,
     "onChartIndicator": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 200, "value": 21, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#3FDDE5", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 200,
+        "value": 21,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#3FDDE5",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
     "category": [
       "Momentum Indicators"
@@ -2000,30 +4711,121 @@
   },
   "mass": {
     "id": "mass",
+    "usage_description": "",
     "long_display_name": "Mass Index",
     "short_display_name": "MASS",
     "editable": true,
-    "fields": [
-      {"title": "Mass Period", "key": "period", "min": 1, "max": 50, "value": 25, "type": "slider"},
-      {"title": "Single MA Period", "key": "singlePeriod", "min": 1, "max": 50, "value": 9, "type": "slider"},
-      {"title": "Double MA Period", "key": "doublePeriod", "min": 1, "max": 50, "value": 9, "type": "slider"},
-      {"title": "Single MA Type", "key": "singleMaType", "value": "SMA", "type": "matype"},
-      {"title": "Double MA Type", "key": "doubleMaType", "value": "SMA", "type": "matype"},
-      {"title": "Stroke", "key": "stroke", "value": "#E03FE5", "type": "colorpicker"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Mass Period",
+        "key": "period",
+        "min": 1,
+        "max": 50,
+        "value": 25,
+        "type": "slider"
+      },
+      {
+        "title": "Single MA Period",
+        "key": "singlePeriod",
+        "min": 1,
+        "max": 50,
+        "value": 9,
+        "type": "slider"
+      },
+      {
+        "title": "Double MA Period",
+        "key": "doublePeriod",
+        "min": 1,
+        "max": 50,
+        "value": 9,
+        "type": "slider"
+      },
+      {
+        "title": "Single MA Type",
+        "key": "singleMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Double MA Type",
+        "key": "doubleMaType",
+        "value": "SMA",
+        "type": "matype"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#E03FE5",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": 0, "max": 100, "value": 25, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#E03FE5", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": 0,
+          "max": 100,
+          "value": 25,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#E03FE5",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#E03FE5", "dashStyle": "Dash", "label": { "text": 23}, "value": 23, "width" : 1},
-        {"color": "#E03FE5", "dashStyle": "Dash", "label": { "text": 27}, "value": 27, "width" : 1}
+      "values": [{
+          "color": "#E03FE5",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 23
+          },
+          "value": 23,
+          "width": 1
+        },
+        {
+          "color": "#E03FE5",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 27
+          },
+          "value": 27,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -2033,26 +4835,93 @@
   },
   "cmo": {
     "id": "cmo",
+    "usage_description": "",
     "long_display_name": "Chande Momentum Oscillator",
     "short_display_name": "CMO",
     "editable": true,
-    "fields": [
-      {"title": "Period", "key": "period", "min": 1, "max": 50, "value": 20, "type": "slider"},
-      {"title": "Stroke width", "key": "strokeWidth", "min": 1, "max": 10, "value": 1, "type": "slider"},
-      {"title": "Stroke", "key": "stroke", "value": "#76E53F", "type": "colorpicker"},
-      {"title": "Dash style", "key": "dashStyle", "value": "Solid", "type": "dashstyle"},
-      {"title": "Applied to", "key": "appliedTo", "value": 3, "type": "appliedto"}
+    "fields": [{
+        "title": "Period",
+        "key": "period",
+        "min": 1,
+        "max": 50,
+        "value": 20,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke width",
+        "key": "strokeWidth",
+        "min": 1,
+        "max": 10,
+        "value": 1,
+        "type": "slider"
+      },
+      {
+        "title": "Stroke",
+        "key": "stroke",
+        "value": "#76E53F",
+        "type": "colorpicker"
+      },
+      {
+        "title": "Dash style",
+        "key": "dashStyle",
+        "value": "Solid",
+        "type": "dashstyle"
+      },
+      {
+        "title": "Applied to",
+        "key": "appliedTo",
+        "value": 3,
+        "type": "appliedto"
+      }
     ],
-    "levels":{
-      "fields": [
-        {"title": "Level", "key": "value", "min": -100, "max": 100, "value": 50, "type": "slider"},
-        {"title": "Stroke width", "key": "width", "min": 1, "max": 10, "value": 1, "type": "slider"},
-        {"title": "Stroke", "key": "color", "value": "#76E53F", "type": "colorpicker"},
-        {"title": "Dash style", "key": "dashStyle", "value": "Dash", "type": "dashstyle"}
+    "levels": {
+      "fields": [{
+          "title": "Level",
+          "key": "value",
+          "min": -100,
+          "max": 100,
+          "value": 50,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke width",
+          "key": "width",
+          "min": 1,
+          "max": 10,
+          "value": 1,
+          "type": "slider"
+        },
+        {
+          "title": "Stroke",
+          "key": "color",
+          "value": "#76E53F",
+          "type": "colorpicker"
+        },
+        {
+          "title": "Dash style",
+          "key": "dashStyle",
+          "value": "Dash",
+          "type": "dashstyle"
+        }
       ],
-      "values": [
-        {"color": "#76E53F", "dashStyle": "Dash", "label": { "text": 30}, "value": 30, "width" : 1},
-        {"color": "#76E53F", "dashStyle": "Dash", "label": { "text": 70}, "value": 70, "width" : 1}
+      "values": [{
+          "color": "#76E53F",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 30
+          },
+          "value": 30,
+          "width": 1
+        },
+        {
+          "color": "#76E53F",
+          "dashStyle": "Dash",
+          "label": {
+            "text": 70
+          },
+          "value": 70,
+          "width": 1
+        }
       ]
     },
     "category": [
@@ -2062,13 +4931,19 @@
   },
   "fractal": {
     "id": "fractal",
+    "usage_description": "",
     "long_display_name": "Fractal",
     "short_display_name": "FRACTAL",
     "onChartIndicator": true,
     "editable": true,
-    "fields": [
-      {"title": "Number of bars on sides", "key": "numberOfBars", "min": 3, "max": 9, "value": 5, "type": "slider"}
-    ],
+    "fields": [{
+      "title": "Number of bars on sides",
+      "key": "numberOfBars",
+      "min": 3,
+      "max": 9,
+      "value": 5,
+      "type": "slider"
+    }],
     "category": [
       "Bill Williams"
     ],
