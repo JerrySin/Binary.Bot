@@ -19,7 +19,18 @@ def genMatrix(max = 10):
     return matrix
 
 def payout():
+    return
 
+def genMatrix1(max = 10):
+    """ return Result Matrix, 0 return all combination of Result """
+    digit = len(bin(max-1))-2
+    # print(digit)
+    matrix = [str(bin(m))[2:].zfill(digit) for m in range(max)]
+    return matrix
+
+def winChance(matrix, winSignal):
+    winMatrix = [m for m in matrix if winSignal in m]
+    return winMatrix
 
 def calcProfit(row):
     profit = 0
@@ -75,9 +86,14 @@ def predict(row = None):
             calcProfit(row)
 
 if __name__ == "__main__":
-    predict()
-    predict("101010101")
-    predict("110101011")
+    # predict()
+    # predict("101010101")
+    # predict("110101011")
+    m = genMatrix1(getExp(12))
+    print(len(m))
+    print(len(winChance(m, "001")))
+
+
     
 # -6.18
 # +6.28
