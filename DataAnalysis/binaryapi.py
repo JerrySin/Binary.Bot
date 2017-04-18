@@ -1,20 +1,38 @@
 import websocket
 import json
 import time
-from pymongo import MongoClient
+# from pymongo import MongoClient
 
+# change list to tuple
+tempList = []
 
+def saveToList(quote):
+    tempList.append(quote)
 
+def matchResult(failTimes = 3, ticks = 5):
+    # even number: n%2==0
+    # odd number: n%2!=0
+    if len(tempList) > failTimes * ticks:
+        r = True
+        for i in range(failTimes):
+            r = (int(float(tempList[-i*ticks-1])*10000) % 2 !=0 and r)
+        return r
+    else:
+        return False
 
 def on_open(ws):
-    json_data = json.dumps({'ticks':'R_100'})
+    json_data = json.dumps({'ticks':'R_50'})
     ws.send(json_data)
 
 def on_message(ws, message):
     response = json.loads(message)['tick']
     epoch = response['epoch']
     quote = response['quote']
+    
+    # save history to list
+    saveToList(quote)
 
+    # 
     #print(response)
 
     # get current timestamp
@@ -27,13 +45,15 @@ def on_message(ws, message):
 
     # Replace time.localtime with time.gmtime for GMT time.
     #gmtTimeString = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime(epoch))
-
-    print(str(epoch) + " - " + str(quote))
+    if matchResult(3, 5):
+        print(str(epoch) + " - " + str(quote) + " - " + "bet even")
+    else:
+        print(str(epoch) + " - " + str(quote))
     #print(timestamp1)
     #print(localTimeString)
     #print(gmtTimeString)
 
-    savetoDB("ticks", response)
+    # savetoDB("ticks", response)
     # print('ticks update: %s' % message)
 
 def savetoDB(collectName, tickResponse):
