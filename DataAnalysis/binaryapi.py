@@ -34,24 +34,10 @@ def on_message(ws, message):
 
     # 
     #print(response)
-
-    # get current timestamp
-    #timestamp1 = time.time()
-    # convert from human readable date to timestamp
-    #timestamp2 = int(time.mktime(time.strptime('2000-01-01 12:34:00', '%Y-%m-%d %H:%M:%S'))) - time.timezone
-
-    # convert from timestamp to human readable date
-    #localTimeString = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.localtime(epoch))
-
-    # Replace time.localtime with time.gmtime for GMT time.
-    #gmtTimeString = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime(epoch))
     if matchResult(3, 5):
         print(str(epoch) + " - " + str(quote) + " - " + "bet even")
     else:
         print(str(epoch) + " - " + str(quote))
-    #print(timestamp1)
-    #print(localTimeString)
-    #print(gmtTimeString)
 
     # savetoDB("ticks", response)
     # print('ticks update: %s' % message)
@@ -65,8 +51,25 @@ def savetoDB(collectName, tickResponse):
     result = db.get_collection(collectName).insert_one(tickResponse)
     print(result.inserted_id)
 
+def timeStamp():
+    # get current timestamp
+    #timestamp1 = time.time()
+    # convert from human readable date to timestamp
+    #timestamp2 = int(time.mktime(time.strptime('2000-01-01 12:34:00', '%Y-%m-%d %H:%M:%S'))) - time.timezone
+
+    # convert from timestamp to human readable date
+    epoch = 1491970860
+    localTimeString = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.localtime(epoch))
+
+    # Replace time.localtime with time.gmtime for GMT time.
+    #gmtTimeString = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime(epoch))
+
+    #print(timestamp1)
+    print(localTimeString)
+    #print(gmtTimeString)
 
 if __name__ == "__main__":
+    timeStamp()
     apiUrl = "wss://ws.binaryws.com/websockets/v3?app_id=1089"
     ws = websocket.WebSocketApp(apiUrl, on_message = on_message, on_open = on_open)
     ws.run_forever()
