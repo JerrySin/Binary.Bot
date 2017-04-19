@@ -10,7 +10,9 @@ tempList = []
 betList = []
 countWin = 0
 countLoss = 0
-epoch = 1477972800
+
+
+epoch = 1492502800
 now = 1492577072
 
 def isOdd(quote):
@@ -62,25 +64,32 @@ def on_open(ws):
     retrieve_history_data()
 
 def on_message(ws, message):
+    # time exceed 
+    if epoch-10000 > time.time():
+        ws.close()
+        return
     #response = json.loads(message)['tick']
     #epoch = response['epoch']
     #quote = response['quote']
+
     response = json.loads(message)["history"]
     prices = response["prices"]
     times = response["times"]
     for i in range(len(prices)):
-        analysis(times[i], prices[i])
+            analysis(times[i], prices[i])
     time.sleep(1)
     retrieve_history_data()
 
 
 def analysis(epoch, quote):
+    ticks = 5
+
     # save history to list
     saveToList(quote)
     # if 
-    showStatistics(quote, 5)
+    showStatistics(quote, ticks)
 
-    if matchResult(4, 5):
+    if matchResult(6, ticks):
         print(str(epoch) + " - " + str(quote) + " - " + "bet even")
         betList.append(True)
     else:
@@ -100,26 +109,27 @@ def savetoDB(collectName, tickResponse):
     # savetoDB("ticks", response)
     # print('ticks update: %s' % message)
 
-def timeStamp():
+def timeStamp(timeString):
     # get current timestamp
     #timestamp1 = time.time()
     # convert from human readable date to timestamp
-    #timestamp2 = int(time.mktime(time.strptime('2000-01-01 12:34:00', '%Y-%m-%d %H:%M:%S'))) - time.timezone
-
+    timestamp2 = int(time.mktime(time.strptime(timeString, '%Y-%m-%d %H:%M:%S'))) - time.timezone
+    return timestamp2
     # convert from timestamp to human readable date
-    epoch = 1477972800
+    #epoch = 1477972800
     # 'Tue, 01 Nov 2016 00:00:00 +0000 - epoch: 1477972800'
-    localTimeString = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.localtime(epoch))
+    #localTimeString = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.localtime(epoch))
 
     # Replace time.localtime with time.gmtime for GMT time.
     #gmtTimeString = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime(epoch))
 
     #print(timestamp1)
-    print(localTimeString)
+    #print(localTimeString)
     #print(gmtTimeString)
 
 if __name__ == "__main__":
     # timeStamp()
+    epoch = timeStamp("2017-04-01 00:00:00")
     apiUrl = "wss://ws.binaryws.com/websockets/v3?app_id=1089"
     ws = websocket.WebSocketApp(apiUrl, on_message = on_message, on_open = on_open)
     ws.run_forever()
