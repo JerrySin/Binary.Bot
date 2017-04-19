@@ -3,22 +3,51 @@ import json
 import time
 # from pymongo import MongoClient
 
-# change list to tuple
+# list stores odd or even
 tempList = []
 
+# list stores bet advice
+betList = []
+countWin = 0
+countLoss = 0
+
+
+def isOdd(quote):
+    return int(quote[-1]) % 2 !=0
+
 def saveToList(quote):
-    tempList.append(quote)
+    # if odd append True
+    # even number: n % 2 == 0
+    # odd number: n % 2 != 0
+    tempList.append(isOdd(quote))
 
 def matchResult(failTimes = 3, ticks = 5):
-    # even number: n%2==0
-    # odd number: n%2!=0
-    if len(tempList) > failTimes * ticks:
+    length = len(tempList)
+    if length > failTimes * ticks:
         r = True
         for i in range(failTimes):
-            r = (int(float(tempList[-i*ticks-1])*10000) % 2 !=0 and r)
+            # print("----" + str(tempList[-i*ticks-1]))
+            r = tempList[-i*ticks-1] and r
         return r
     else:
+        if length == failTimes * ticks:
+            print("======= Begin =======")
         return False
+
+# def purchase(stake):
+
+def showStatistics(quote, ticks = 5):
+    global countWin, countLoss
+    if len(betList) > ticks:
+        if not isOdd(quote) and betList[-ticks]:
+            countWin += 1
+        elif isOdd(quote) and betList[-ticks]:
+            countLoss += 1
+        
+    print("Win: {0} / Loss: {1}".format(countWin, countLoss))
+    # print(countWin)
+    # + " - Loss: " + str(countLoss))
+
 
 def on_open(ws):
     json_data = json.dumps({'ticks':'R_50'})
@@ -30,7 +59,10 @@ def on_message(ws, message):
     quote = response['quote']
     
     # save history to list
+    # saveToList(int(float(quote)*10000))
     saveToList(quote)
+    # if 
+    showStatistics(quote, 5)
 
     # 
     #print(response)
@@ -45,10 +77,12 @@ def on_message(ws, message):
 
     # Replace time.localtime with time.gmtime for GMT time.
     #gmtTimeString = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime(epoch))
-    if matchResult(3, 5):
+    if matchResult(4, 5):
         print(str(epoch) + " - " + str(quote) + " - " + "bet even")
+        betList.append(True)
     else:
         print(str(epoch) + " - " + str(quote))
+        betList.append(False)
     #print(timestamp1)
     #print(localTimeString)
     #print(gmtTimeString)
@@ -67,6 +101,7 @@ def savetoDB(collectName, tickResponse):
 
 
 if __name__ == "__main__":
+
     apiUrl = "wss://ws.binaryws.com/websockets/v3?app_id=1089"
     ws = websocket.WebSocketApp(apiUrl, on_message = on_message, on_open = on_open)
     ws.run_forever()
