@@ -10,13 +10,20 @@ tempList = []
 betList = []
 countWin = 0
 countLoss = 0
-
+maxLossList = []
+gLoss = 4
+gTicks = 5
+gcount = 5000
+gMarket = "RDBULL"
 
 epoch = 1492502800
 now = 1492577072
 
 def isOdd(quote):
     return int(quote[-1]) % 2 !=0
+
+def saveToFile(epoch, quote):
+    file.write(epoch, quote)
 
 def saveToList(quote):
     # if odd append True
@@ -44,29 +51,37 @@ def showStatistics(quote, ticks = 5):
     if len(betList) > ticks:
         if not isOdd(quote) and betList[-ticks]:
             countWin += 1
+            print("Win: {0} / Loss: {1}".format(countWin, countLoss))
         elif isOdd(quote) and betList[-ticks]:
             countLoss += 1
-        
-    print("Win: {0} / Loss: {1}".format(countWin, countLoss))
+            print("Win: {0} / Loss: {1}".format(countWin, countLoss))
     # print(countWin)
     # + " - Loss: " + str(countLoss))
 
 def retrieve_history_data(count = 5000):
     global epoch
-    json_data = json.dumps({"ticks_history": "R_50", "end": epoch, "count": count})
-    print("=============== {0} ===============".format(epoch))
+    json_data = json.dumps({"ticks_history": gMarket, "end": epoch, "count": count})
+    print("=============== {0} ===============".format(epoch2time(epoch)))
+    time.sleep(1)
     epoch += count*2
     ws.send(json_data)
 
 def on_open(ws):
     #json_data = json.dumps({'ticks':'R_50'})
     #ws.send(json_data)
-    retrieve_history_data()
+    retrieve_history_data(gcount)
+
+def on_error(ws, error):
+    print(error)
+
+def on_close(ws):
+    print("### closed ###")
 
 def on_message(ws, message):
     # time exceed 
     if epoch-10000 > time.time():
         ws.close()
+        calc_max_loss(gTicks)
         return
     #response = json.loads(message)['tick']
     #epoch = response['epoch']
@@ -75,21 +90,44 @@ def on_message(ws, message):
     response = json.loads(message)["history"]
     prices = response["prices"]
     times = response["times"]
-    for i in range(len(prices)):
-            analysis(times[i], prices[i])
+    
+    with open("history_" + gMarket + "_2017.txt", "a") as file:
+        for i in range(len(prices)):
+            # save to local file
+            #saveToFile(times[i], prices[i])
+            #file.seek(0, 0)
+            file.write(times[i] + "," + prices[i] + "\n")
+            #analysis(times[i], prices[i])
+
     time.sleep(1)
-    retrieve_history_data()
+    retrieve_history_data(gcount)
+
+def calc_max_loss(ticks):
+    #betList = [False, False, False, True, False, False, False, False, True, False, False, False, False, True, False, False, False, False, True, False, False, False, False, True, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False]
+    #print(betList)
+    length = len(betList)
+    print(length)
+    for i in range(length):
+        maxLoss = 0
+        j = 1
+        while abs(-j*ticks-i-1)<length and betList[-j*ticks-i-1]:
+            maxLoss += 1
+            j+=1
+        maxLossList.append(maxLoss)
+    #print(maxLossList)
+    print([x for x in maxLossList if x > 8])
+    print(max(maxLossList))
+
 
 
 def analysis(epoch, quote):
-    ticks = 5
 
     # save history to list
     saveToList(quote)
-    # if 
-    showStatistics(quote, ticks)
 
-    if matchResult(6, ticks):
+    showStatistics(quote, gTicks)
+
+    if matchResult(gLoss, gTicks):
         print(str(epoch) + " - " + str(quote) + " - " + "bet even")
         betList.append(True)
     else:
@@ -109,7 +147,7 @@ def savetoDB(collectName, tickResponse):
     # savetoDB("ticks", response)
     # print('ticks update: %s' % message)
 
-def timeStamp(timeString):
+def time2epoch(timeString):
     # get current timestamp
     #timestamp1 = time.time()
     # convert from human readable date to timestamp
@@ -120,16 +158,27 @@ def timeStamp(timeString):
     # 'Tue, 01 Nov 2016 00:00:00 +0000 - epoch: 1477972800'
     #localTimeString = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.localtime(epoch))
 
+def epoch2time(epochString):
+    
     # Replace time.localtime with time.gmtime for GMT time.
-    #gmtTimeString = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime(epoch))
-
+    gmtTimeString = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime(epochString))
+    return gmtTimeString
     #print(timestamp1)
     #print(localTimeString)
     #print(gmtTimeString)
 
 if __name__ == "__main__":
     # timeStamp()
-    epoch = timeStamp("2017-04-01 00:00:00")
+    #calc_max_loss(gTicks)
+    
+
+    epoch = time2epoch("2017-01-01 00:00:00")
+    #epoch = time2epoch("2017-04-19 20:00:00")
     apiUrl = "wss://ws.binaryws.com/websockets/v3?app_id=1089"
-    ws = websocket.WebSocketApp(apiUrl, on_message = on_message, on_open = on_open)
+    ws = websocket.WebSocketApp(apiUrl,
+                                on_message = on_message,
+                                on_open = on_open,
+                                on_error = on_error,
+                                on_close = on_close)
+
     ws.run_forever()
