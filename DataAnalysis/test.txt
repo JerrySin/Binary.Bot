@@ -1,1 +1,0 @@
-<pymongo.cursor.Cursor object at 0x1149dd150>
