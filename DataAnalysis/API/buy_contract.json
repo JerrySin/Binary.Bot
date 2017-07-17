@@ -1,0 +1,106 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Buy a Contract Send",
+    "description": "Buy a Contract",
+    "properties": {
+        "buy": {
+            "type": "string",
+            "pattern": "^(?:[\\w-]{32,128}|1)$",
+            "description": "Either the id received from a Price Proposal (proposal) call, or 1 if contract buy parameters are passed in the parameters field",
+            "required": "1"
+        },
+        "price": {
+            "type": "number",
+            "description": "Maximum price at which to purchase the contract.",
+            "required": "1"
+        },
+        "parameters": {
+            "type": "object",
+            "description": "Optional field, used to pass the parameters for contract buy",
+            "properties": {
+                "amount": {
+                    "type": "number",
+                    "description": "Proposed payout or stake value"
+                },
+                "basis": {
+                    "description": "Indicate whether amount is 'payout' or 'stake'",
+                    "enum": [
+                        "payout",
+                        "stake"
+                    ]
+                },
+                "contract_type": {
+                    "type": "string",
+                    "description": "A valid contract-type",
+                    "pattern": "^\\w{2,30}$",
+                    "required": "1"
+                },
+                "currency": {
+                    "type": "string",
+                    "description": "This can only be the account-holder's currency",
+                    "pattern": "^[A-Z]{3}$",
+                    "required": "1"
+                },
+                "date_start": {
+                    "type": "integer",
+                    "pattern": "^\\d{1,10}$",
+                    "description": "For forward-starting contracts, epoch value of the starting time of the contract."
+                },
+                "date_expiry": {
+                    "type": "integer",
+                    "pattern": "^\\d{1,10}$",
+                    "description": "Epoch value of the expiry time of the contract. You must either specify date_expiry or duration."
+                },
+                "duration": {
+                    "type": "integer",
+                    "description": "Duration quantity"
+                },
+                "duration_unit": {
+                    "description": "Duration unit is s(seconds), m(minutes), h(hours), d(days), t(ticks)",
+                    "enum": [
+                        "d",
+                        "m",
+                        "s",
+                        "h",
+                        "t"
+                    ]
+                },
+                "symbol": {
+                    "type": "string",
+                    "description": "Symbol code",
+                    "pattern": "^\\w{2,30}$",
+                    "required": "1"
+                },
+                "barrier": {
+                    "type": "string",
+                    "description": "Barrier for the contract (or last digit prediction for digit contracts). Contracts less than 24 hours in duration would need a relative barrier (barriers which need +/-), meaning that the entry spot would be adjusted accordingly with that amount to define a barrier.",
+                    "pattern": "^[+-]?\\d+\\.?\\d*$"
+                },
+                "barrier2": {
+                    "type": "string",
+                    "pattern": "^[+-]?\\d+\\.?\\d*$",
+                    "description": "Low barrier for the contract (for contracts with two barriers). Contracts less than 24 hours in duration would need a relative barrier (barriers which need +/-), meaning that the entry spot would be adjusted accordingly with that amount to define a barrier."
+                },
+                "trading_period_start": {
+                    "type": "integer",
+                    "pattern": "^\\d{1,10}$",
+                    "description": "[For japan only] An epoch value of a predefined trading period start time"
+                }
+            }
+        },
+        "passthrough": {
+            "type": "object",
+            "description": "Optional field, used to pass data through the websocket, which may be retrieved via the echo_req output field."
+        },
+        "req_id": {
+            "type": "integer",
+            "description": "Optional field to map request to response"
+        }
+    },
+    "additionalProperties": false,
+    "example": {
+        "buy": "uw2mk7no3oktoRVVsB4Dz7TQnFfABuFDgO95dlxfMxRuPUsz",
+        "price": 100
+    }
+}

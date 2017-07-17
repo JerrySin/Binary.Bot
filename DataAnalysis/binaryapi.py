@@ -23,7 +23,8 @@ def isOdd(quote):
     return int(quote[-1]) % 2 !=0
 
 def saveToFile(epoch, quote):
-    file.write(epoch, quote)
+    #file.write(epoch, quote)
+    return
 
 def saveToList(quote):
     # if odd append True
@@ -66,10 +67,16 @@ def retrieve_history_data(count = 5000):
     epoch += count*2
     ws.send(json_data)
 
+def ask_price_proposal(ws):
+    json_data = json.dumps({"proposal": 1, "amount": "100", "basis": "payout", "contract_type": "CALL", "currency": "USD", "duration": "60", "duration_unit": "s", "symbol": "R_100"})
+    ws.send(json_data)
+
+
 def on_open(ws):
     #json_data = json.dumps({'ticks':'R_50'})
     #ws.send(json_data)
-    retrieve_history_data(gcount)
+    # retrieve_history_data(gcount)
+    ask_price_proposal(ws)
 
 def on_error(ws, error):
     print(error)
@@ -78,6 +85,9 @@ def on_close(ws):
     print("### closed ###")
 
 def on_message(ws, message):
+    print(message)
+
+def on_message1(ws, message):
     # time exceed 
     if epoch-10000 > time.time():
         ws.close()
@@ -117,7 +127,6 @@ def calc_max_loss(ticks):
     #print(maxLossList)
     print([x for x in maxLossList if x > 8])
     print(max(maxLossList))
-
 
 
 def analysis(epoch, quote):
@@ -167,6 +176,17 @@ def epoch2time(epochString):
     #print(localTimeString)
     #print(gmtTimeString)
 
+def run_once(apiUrl):
+    ws = websocket.create_connection(apiUrl)
+    print("Start...")
+    json_data = json.dumps({"proposal": 1, "amount": "100", "basis": "payout", "contract_type": "CALL", "currency": "USD", "duration": "60", "duration_unit": "s", "symbol": "R_100"})
+    ws.send(json_data)
+    print("Sent '%s'" % json_data)
+    print("Receiving...")
+    result =  ws.recv()
+    print("Received '%s'" % result)
+    ws.close()
+
 if __name__ == "__main__":
     # timeStamp()
     #calc_max_loss(gTicks)
@@ -175,10 +195,24 @@ if __name__ == "__main__":
     epoch = time2epoch("2017-01-01 00:00:00")
     #epoch = time2epoch("2017-04-19 20:00:00")
     apiUrl = "wss://ws.binaryws.com/websockets/v3?app_id=1089"
-    ws = websocket.WebSocketApp(apiUrl,
-                                on_message = on_message,
-                                on_open = on_open,
-                                on_error = on_error,
-                                on_close = on_close)
+    # ws = websocket.WebSocketApp(apiUrl,
+    #                             on_message = on_message,
+    #                             on_open = on_open,
+    #                             on_error = on_error,
+    #                             on_close = on_close)
+    #ws.run_forever()
+    run_once(apiUrl)
 
-    ws.run_forever()
+
+https://developers.binary.com/api/#authorize
+{
+  "authorize": "ce9OjFqxc5Daode"
+}
+
+https://developers.binary.com/api/#profit_table
+{
+  "profit_table": 1,
+  "date_from": "2017-05-01",
+  "limit":999,
+  "offset":999
+}

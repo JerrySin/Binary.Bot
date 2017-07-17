@@ -1,0 +1,93 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Price Proposal Response",
+    "description": "Latest price and other details for a given contract",
+    "properties": {
+        "echo_req": {
+            "title": "Echo request",
+            "description": "Echo of the request made",
+            "required": 1
+        },
+        "proposal": {
+            "type": "object",
+            "title": "Price Proposal Response",
+            "description": "Latest price and other details for a given contract",
+            "properties": {
+                "longcode": {
+                    "type": "string",
+                    "description": "Example: Win payout if Random 100 Index is strictly higher than entry spot at 15 minutes after contract start time.",
+                    "required": 1
+                },
+                "spot": {
+                    "type": "number",
+                    "description": "Spot value (if there are no Exchange data-feed licensing restrictions for the underlying symbol). Example: 9874.52",
+                    "required": 1
+                },
+                "spot_time": {
+                    "type": "integer",
+                    "description": "Example: 1439999052",
+                    "required": 1
+                },
+                "ask_price": {
+                    "type": "number",
+                    "description": "Example: 5.14",
+                    "required": 1
+                },
+                "display_value": {
+                    "type": "number",
+                    "description": "Example: 5.14, same as ask_price",
+                    "required": 1
+                },
+                "date_start": {
+                    "type": "integer",
+                    "description": "Example: 1439999053",
+                    "required": 1
+                },
+                "id": {
+                    "type": "string",
+                    "description": "A stream id that can be used to cancel this stream using the Forget request. Example: 1d6651e7d599bce6c54bd71a8283e579",
+                    "required": 1
+                },
+                "payout": {
+                    "type": "number",
+                    "description": "Example: 10",
+                    "required": 1
+                }
+            }
+        },
+        "msg_type": {
+            "type": "string",
+            "description": "proposal",
+            "required": 1
+        },
+        "req_id": {
+            "type": "integer",
+            "description": "Optional field send in request to map to response, present only when request contains req_id"
+        }
+    },
+    "example": {
+        "echo_req": {
+            "amount": "100",
+            "basis": "payout",
+            "contract_type": "CALL",
+            "currency": "USD",
+            "duration": "60",
+            "duration_unit": "s",
+            "proposal": 1,
+            "symbol": "R_100"
+        },
+        "msg_type": "proposal",
+        "passthrough": {},
+        "proposal": {
+            "ask_price": "51.47",
+            "date_start": "1497667671",
+            "display_value": "51.47",
+            "id": "0edceaf8-3dc9-ec31-b196-9b4d51c5107f",
+            "longcode": "Win payout if Volatility 100 Index is strictly higher than entry spot at 1 minute after contract start time.",
+            "payout": "100",
+            "spot": "12022.74",
+            "spot_time": "1497667670"
+        }
+    }
+}
